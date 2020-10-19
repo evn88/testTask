@@ -1,0 +1,37 @@
+@media screen and (max-width: 1370px) {
+
+  .section__cities {
+    .cities__content {
+
+      .cities__item {
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1036px) {
+  .section__cities {
+    .cities__content {
+      .cities__item {
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1036px) {
+  .section__cities {
+    .cities__content {
+      .cities__item {
+        flex-basis: 350px;
+        &:nth-of-type(2n+1) {
+          margin-right: 30px;
+        }
+        &:nth-of-type(2n), &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
