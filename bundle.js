@@ -104,7 +104,7 @@ function init() {
   var style = {
     hideIconOnBalloonOpen: false,
     iconLayout: 'default#image',
-    iconImageHref: 'img/pin.svg',
+    iconImageHref: '/img/pin.svg',
     iconImageSize: [30, 42],
     iconImageOffset: [-5, -38]
   };

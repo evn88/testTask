@@ -2,14 +2,14 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-const ASSET_PATH = process.env.ASSET_PATH || '/dist';
+const ASSET_PATH = process.env.ASSET_PATH || '/';
 
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
   devtool: "source-map",
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, ''),
     publicPath: ASSET_PATH,
     filename: 'bundle.js'
   },
@@ -78,7 +78,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'src/img'),
-          to: path.resolve(__dirname, 'dist/img')
+          to: path.resolve(__dirname, 'img')
         }
       ]
     }),
